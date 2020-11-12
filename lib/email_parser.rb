@@ -19,7 +19,7 @@ end
 
 
 def parse
-self.name.split
+self.name.split(",")
 
 end
 
