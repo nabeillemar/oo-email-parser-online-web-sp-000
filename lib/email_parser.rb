@@ -26,12 +26,3 @@ end
 
 end
 
-
-
-email_addresses = "john@doe.com, person@somewhere.org"
-p parser = EmailAddressParser.new(email_addresses)
-
-p parser.name
-
-
-p parser.parse
