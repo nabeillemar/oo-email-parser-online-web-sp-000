@@ -19,7 +19,10 @@ end
 
 
 def parse
-self.name.split(" ")
+self.name.split.collect do |address|
+  address.split(',')
+end
+.flatten.uniq
 
 end
 
