@@ -5,9 +5,33 @@
 
 
 class EmailAddressParser
-  attr_accessor :parse
-  
-  
-end 
+attr_accessor :name
+@@all= []
+
+def self.all
+  @@all
+end
+
+def initialize(name)
+  @name = name
+  @@all << self
+end
 
 
+def parse
+self.name.split
+
+end
+
+
+end
+
+
+
+email_addresses = "john@doe.com, person@somewhere.org"
+p parser = EmailAddressParser.new(email_addresses)
+
+p parser.name
+
+
+p parser.parse
